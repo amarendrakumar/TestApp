@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html ng-app="MyApp">
+<head>
+    <meta charset="utf-8" />
+    <title>PushSharpTest</title>
+
+    <!-- PushSharpTest references -->
+    <link href="css/index.css" rel="stylesheet" />
+</head>
+<body>
+    <p>Hello, your application is ready!</p>
+    {{1+1}}
+
+    <div ng-controller="Apple">
+        {{Amar}}
+        <test text="1"></test>
+       <!--<div> deviceID : {{deviceID}}</div>--> 
+    </div>
+    <section ng-controller="MainCtrl">
+        <addbuttonsbutton></addbuttonsbutton>
+        <div id="space-for-buttons">
+        </div>
+    </section>
+
+    <section ng-controller="MyCtrl">
+         <ul>
+             <li> device   :  {{device}}</li>
+             <li> cordova  :  {{cordova}}</li>
+             <li> model    :  {{model}}</li>
+             <li> platform :  {{platform}}</li>
+             <li> uuid     :  {{uuid}}</li>
+             <li> version  :  {{version}}</li>
+        </ul>
+    </section>
+   
+    <script src="scripts/angular.min.js"></script>
+    <!-- Cordova reference, this is added to your app when it's built. -->
+    <script src="scripts/ng-cordova.min.js"></script>
+    <script src="cordova.js"></script>
+    <script src="scripts/platformOverrides.js"></script>
+   
+    <script type="text/javascript" src="scripts/PushNotification.js"></script>
+    <script type="text/javascript" src="https://cdn.pubnub.com/pubnub-3.7.4.min.js"></script>
+
+    <script src="scripts/index.js"></script>
+    <script src="scripts/app.js"></script>
+
+</body>
+</html>
