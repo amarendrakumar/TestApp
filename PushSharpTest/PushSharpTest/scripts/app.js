@@ -20,7 +20,7 @@
     MyApp.controller('Apple', function ($scope) {
 debugger
         $scope.Amar = "Amarendra Kumar Amar";
-       
+        //"Amar"
       
     });
 
